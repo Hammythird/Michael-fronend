@@ -1,0 +1,177 @@
+.home {
+    background: url('../images/back.webp') no-repeat;
+    background-position: cover;
+    height: 600px;
+    .main-nav {
+        display: flex;
+        list-style: none;
+        overflow: hidden;
+        margin-top: 0;
+        background: var(--button);
+        a {
+            padding: 14px 16px;
+            text-decoration: none;
+            color: var(--primary);
+            &:hover {
+                border-bottom: 5px var(--primary) solid;
+            }
+        }
+        @media (max-width: 756px) {
+            display: none;
+        }
+    }
+    .job-search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        > :first-child {
+            background: #ffffffe6;
+            padding: 10px;
+            margin-top: 100px;
+            margin-right: 770px;
+            color: rgb(49, 47, 47);
+            width: max-content;
+            h3 {
+                font-size: 1.2em;
+            }
+            @media (max-width:756px) {
+                display: none;
+            }
+        }
+        .search {
+            display: flex;
+            justify-content: space-around;
+            background-color: var(--primary);
+            margin-top: 100px;
+            input {
+                width: 100px;
+                height: 40px;
+                padding: 10px;
+                margin: 25px;
+            }
+            select {
+                width: 100px;
+                height: 40px;
+                padding: 10px;
+                margin: 25px;
+                color: var(--font-color);
+            }
+            button {
+                width: 100px;
+                height: 40px;
+                background: var(--button);
+                border: 1px solid var(--white);
+                border-radius: 1px;
+                padding: 10px;
+                margin: 25px;
+                color: var(--primary);
+                &:hover {
+                    background: var(--button-hover);
+                }
+            }
+            @media (max-width: 756px) {
+                margin: 0px;
+                display: block;
+                background: var(--button-hover);
+                input,
+                button {
+                    width: 80%;
+                    border: 2px solid var(--primary);
+                }
+                select {
+                    display: none;
+                }
+            }
+        }
+        @media (max-width: 756px) {
+            display: block;
+            background: var(--button);
+        }
+    }
+    .job-by-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #d1d1d1;
+        >:first-child {
+            color: var(--font-color);
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            li {
+                border-right: var(--font-color) 2px solid;
+                width: fit-content;
+                margin: 0px 10px;
+                a {
+                    color: var(--button);
+                    margin-right: 20px;
+                    text-decoration: none;
+                    &:hover {
+                        color: var(--button-hover);
+                        text-decoration: underline;
+                    }
+                }
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+    .popular-job-titles {
+        >:first-child {
+            color: var(--font-color);
+        }
+        .job-list {
+            display: flex;
+            justify-content: space-evenly;
+            ul {
+                list-style: none;
+                a {
+                    color: var(--button);
+                    text-decoration: none;
+                    &:hover {
+                        color: var(--button-hover);
+                        text-decoration: underline;
+                    }
+                }
+            }
+            @media (max-width: 756px) {
+                display: block;
+            }
+        }
+    }
+    .new-opportunity {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            color: var(--font-color);
+            margin-left: 0px;
+        }
+        p {
+            font-size: var(--font-size);
+        }
+    }
+    .relative-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ffffffef;
+            border-radius: 5px;
+        }
+        @media (max-width: 756px) {
+            display: block;
+        }
+    }
+    @media (max-width:756px) {
+        background: none;
+    }
+}

@@ -1,0 +1,70 @@
+:root {
+    --primary: white;
+    --button-hover: #0d316d;
+    --button: #124395;
+    --font-color: #3f4048;
+    --primary-font: "Roboto", sans-serif;
+    --font-size: 16px;
+    --footer-color: #3f4048;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--primary);
+    font-size: var(--font-size);
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin: 20px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.63em;
+}
+
+h2 {
+    font-size: 2.13em;
+}
+
+h3 {
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1.46em;
+}
+
+h6 {
+    font-size: 1.3em;
+}
+
+li {
+    margin: 10px;
+    font-weight: 400;
+    width: fit-content;
+}
